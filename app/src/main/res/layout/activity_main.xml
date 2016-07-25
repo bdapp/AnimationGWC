@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.budor.animationgwc.MainActivity">
+
+    <ListView
+        android:id="@+id/main_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:background="@android:color/holo_green_light">
+        <ImageView
+            android:id="@+id/main_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/main_num"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/holo_green_light"
+            android:background="@drawable/text_bg"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
